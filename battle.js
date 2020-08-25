@@ -50,7 +50,7 @@ window.onscroll = function(){
 		}
 
 		if (t > 6804) {
-			location.href = "https://jjoohee.github.io/doong0826/;
+			location.href = "https://jjoohee.github.io/doong0826/";
 		}
 }
 
