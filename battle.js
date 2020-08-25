@@ -49,8 +49,8 @@ window.onscroll = function(){
 			people5_2arm.style.animation = "";
 		}
 
-		if (t > 6800) {
-			location.href = "https://jjoohee.github.io/misfortunevirus_0812/";
+		if (t > 6804) {
+			location.href = "https://jjoohee.github.io/doong0826/;
 		}
 }
 
