@@ -55,8 +55,8 @@ window.onscroll = function(){
 			people5_2arm.style.animation = "";
 		}
 
-		if (t > 6800) {
-			location.href = "";
+		if (t > 6900) {
+			location.href = "https://jjoohee.github.io/doong0826/";
 		}
 }
 
