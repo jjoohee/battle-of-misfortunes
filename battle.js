@@ -14,6 +14,12 @@ people1_24.onclick = function(){
 			people1_21.style.animation = "peo 0.3s 1.5s infinite ease-in alternate";
 		}
 
+people4_1.onclick = function(){
+
+			talk.style.animation = "ta 0.1s infinite linear alternate, ta- 0.2s infinite linear alternate, bigger 0.3s linear";
+		}
+
+
 var  astate = "off";
 
 trophy.onclick = function(){
@@ -29,7 +35,7 @@ trophy.onclick = function(){
 			trophy2.style.animation = "troo 2s ease";
 			trophy2.style.opacity = "0%";
 			trophy.style.opacity = "100%";
-			state = "off";
+			astate = "off";
 			}
 		}
 
@@ -49,8 +55,7 @@ window.onscroll = function(){
 			people5_2arm.style.animation = "";
 		}
 
-		if (t > 6804) {
-			location.href = "https://jjoohee.github.io/doong0826/";
+		if (t > 6800) {
+			location.href = "";
 		}
 }
-
