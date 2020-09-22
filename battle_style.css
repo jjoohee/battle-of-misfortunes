@@ -1,883 +1,191 @@
-            @font-face {
-    font-family: 'MapoGoldenPier';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoGoldenPierA.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
-
-body, div, h1, p{margin: 0;}
-body{ position: relative; background: black;
-	}
-h1, p{ color: white;
-		 font-family: 'MapoGoldenPier';}
-p{line-height: 1.9em; word-break: keep-all; font-size: 1.2em;}
-
-
-#moniter{width: 80px; height: 30px; background: black; color: white; position: fixed; top: 0; right: 0;}
-
-		@keyframes lo{
-				from{left: -100px;} to{left: 0px;}
-			}
-		@keyframes ro{
-				from{right: 100px;} to{right: 0px;}
-			}
-#titlee{
-	width: 1200px;
-	height: 620px;
-	position: absolute;
-	left: calc(50% - 600px);
-	top: 0px;
-	background: #0F3A43;
-
-}
-
-#timg{
-	width: 600px;
-	height: auto;
-	position: absolute;
-	left: calc(50% - 300px);
-	top: calc(50% - 192.5px);
-}
-.warp{
-	top: 610px;
-	width: 1200px; height: 7083px; position: absolute;
-	min-width: 20%;
-	left: calc(50% - 600px); background: black;
-	overflow: hidden;
-	display: block;
-}
-
-@media (max-width: 980px){
-	.warp{
-		left: calc(50% - 490px);
-	}
-	#titlee{
-		left: calc(50% - 490px);
-	}
-}
-
-#back0{
-	position: absolute;
-	width: 1200px; height: 1500px;
-	top: 0px;
-	left: calc(50% - 600px);
-	background: linear-gradient(to bottom, #0F3A43 50%, black);
-}
-
-#back3{
-	position: absolute;
-	top: 1502px;
-	left: calc(50% - 600px);
-}
-
-
-#back4{
-	position: absolute;
-	top: 1460px;
-	left: 0px;
-}
-
-#back5{
-	position: absolute;
-	top: 2800px;
-	left: calc(50% - 600px);
-
-}
-
-#people3back{
-	position: absolute;
-	left: 10px;
-	top: 2100px;
-}
-
-#back10{
-	position: absolute;
-	width: 1200px; height: 920px;
-	bottom:1870px;
-	left: calc(50% - 600px);
-	background: linear-gradient( to bottom, black 5%, #3A4A4B 30%, #007165);
-}
-
-#back10_1{
-	position: absolute;
-	width: 1200px; height: 920px;
-	bottom:950px;
-	left: calc(50% - 600px);
-	background: linear-gradient( to top, black 15%, #3A4A4B 60%, #007165);
-}
-
-
-#domm1{
-	position: absolute;
-	width: 1100px;
-	height: 430px;
-	bottom: 2890px;
-	left: calc(50% - 550px);
-	border-radius: 500px 500px 0px 0px;
-	background: url('table.gif') ;
-}
-
-#domm2{
-	position: absolute;
-	bottom: 1900px;
-	left: calc(50% - 600px);
-}
-
-#bubble1{
-	position: absolute;
-	width: 90px; height: 90px;
-	left: 250px; top: 130px;
-	background: #FFF476;
-	border:2px solid #B42840;
-	border-radius:75px;
-	animation: ba 1.5s linear infinite alternate, bb 0.3s linear infinite alternate;
-}
-
-@keyframes ba { 
-				to {left: 280px; position: absolute; z-index: 0;}
-				from {left: 240px; position: absolute; z-index: 0;}
-			} 
-
-@keyframes bb { 
-				to {transform: translateY(-10%); position: absolute; z-index: 0;}
-				from {transform: translateY(20%); position: absolute; z-index: 0;}
-			} 
-
-
-#bubble2{
-	position: absolute;
-	width: 60px; height: 60px;
-	left: 50px; top: 200px;
-	background: #FFF476;
-	border:2px solid #B42840;
-	border-radius:75px;
-	animation: bc 1.9s linear infinite alternate, bb 0.3s linear infinite alternate;
-}
-
-@keyframes bc { 
-				to {left: 80px; position: absolute; z-index: 0;}
-				from {left: 40px; position: absolute; z-index: 0;}
-			}
-
-#bubble3{
-	position: absolute;
-	width: 65px; height: 65px;
-	left: 200px; top: 360px;
-	background: #F4A74C;
-	border:2px solid #B42840;
-	border-radius:75px;
-	animation: bd 1.3s linear infinite alternate, bb 0.4s linear infinite alternate;
-}
-
-@keyframes bd { 
-				to {left: 240px; position: absolute; z-index: 0;}
-				from {left: 180px; position: absolute; z-index: 0;}
-			}
-
-
-#bubble4{
-	position: absolute;
-	width: 95px; height: 95px;
-	right: 150px; top: 150px;
-	background: #FFF476;
-	border:2px solid #B42840;
-	border-radius:75px;
-	animation: be 1s linear infinite alternate, bb 0.6s linear infinite alternate;
-}
-
-@keyframes be { 
-				to {right: 154px; position: absolute; z-index: 0;}
-				from {right: 90px; position: absolute; z-index: 0;}
-			}
-
-#bubble5{
-	position: absolute;
-	width: 60px; height: 60px;
-	right: 30px; top: 50px;
-	background: #F4A74C;
-	border:2px solid #B42840;
-	border-radius:75px;
-	animation: bf 1s linear infinite alternate, bb 0.4s linear infinite alternate;
-}
-@keyframes bf { 
-				to {right: 10px; position: absolute; z-index: 0;}
-				from {right: 30px; position: absolute; z-index: 0;}
-			}
-
-
-#bubble6{
-	position: absolute;
-	width: 72px; height: 72px;
-	right: 240px; top: 260px;
-	background: #FFF476;
-	border:2px solid #B42840;
-	border-radius:75px;
-	animation: bg 1.3s linear infinite alternate, bb 0.3s linear infinite alternate;
-}
-@keyframes bg { 
-				to {right: 270px; position: absolute; z-index: 0;}
-				from {right: 220px; position: absolute; z-index: 0;}
-			}
-
-
-#bubble7{
-	position: absolute;
-	width: 55px; height: 55px;
-	left: 110px; top: 90px;
-	background: #EFCC6F;
-	border:2px solid #B42840;
-	border-radius:75px;
-	animation: bh 1.4s linear infinite alternate, bb 0.5s linear infinite alternate;
-}
-
-@keyframes bh { 
-				to {left: 150px; position: absolute; z-index: 0;}
-				from {left: 100px; position: absolute; z-index: 0;}
-			}
-
-#bubble8{
-	position: absolute;
-	width: 55px; height: 55px;
-	right: 110px; top: 390px;
-	background: #EFCC6F;
-	border:2px solid #B42840;
-	border-radius:75px;
-	animation: bi 1.4s linear infinite alternate, bb 0.5s linear infinite alternate;
-}
-
-@keyframes bi { 
-				to {right: 150px; position: absolute; z-index: 0;}
-				from {right: 100px; position: absolute; z-index: 0;}
-			}
-
-
-#domback2{
-	position: absolute;
-	width: 1100px;
-	left: calc(50% - 550px);
-	bottom: 450px;
-}
-
-
-#people1_1{
-	position: absolute;
-	top: 600px;
-	right: -36px;
-}
-
-@keyframes peo { 
-				to {transform: translateY(10%); position: absolute; z-index: 0;}
-				from {transform: translateY(-2%); position: absolute; z-index: 0;}
-			}
-
-#people1_2{
-	position: absolute;
-	top: 600px;
-	right: 255px;
-}
-
-#people1_3{
-	position: absolute;
-	top: 600px;
-	left: 255px;
-}
-
-#people1_4{
-	position: absolute;
-	top: 600px;
-	left: -36px;
-}
-
-
-#table{
-	position: absolute;
-	width: 1210px;
-	height: 480px;
-	top: 965px;
-	border: 2px solid #B42640;
-	left: calc(50% - 605px);
-	background: url('table.gif');
-}
-
-#people1_21{
-	position: absolute;
-	top: 1032px;
-	left: -36px;
-}
-
-#people1_22{
-	position: absolute;
-	top: 1032px;
-	left: 255px;
-}
-
-#people1_23{
-	position: absolute;
-	top: 1032px;
-	right: 255px;
-}
-
-#people1_24{
-	position: absolute;
-	top: 1032px;
-	right: -36px;
-}
-
-#people2_1{
-	position: absolute;
-	top: 1535px;
-	left: calc(50% - 577.5px);
-	/*전광판 효과*/
-	animation: sl 15s linear infinite;
-}
-
-
-@keyframes sl { 
-	0%   {  transform: translateX(0%); position: absolute; }
- 	100% { transform: translateX(-100%); position: absolute;}
-	}
-
-#people2_11{
-	position: absolute;
-	top: 1535px;
-	left: calc(50% - 577.5px);
-	/*전광판 효과*/
-	animation: sli 30s linear infinite;
-}
-
-@keyframes sli { 
-	0%   {  transform: translateX(100%); position: absolute; }
- 	100% { transform: translateX(-100%); position: absolute;}
-	}
-
-#people2_2{
-	position: absolute;
-	top: 1742px;
-	right: calc(50% - 577.5px);
-	animation: sr 15s linear infinite;
-}
-
-@keyframes sr { 
-	0%   {  transform: translateX(0%); position: absolute; }
- 	100% { transform: translateX(100%); position: absolute;}
-	}
-
-#people2_22{
-	position: absolute;
-	top: 1742px;
-	right: calc(50% - 577.5px);
-	animation: sri 30s linear infinite;
-}
-
-@keyframes sri { 
-	0%   {  transform: translateX(-100%); position: absolute; }
- 	100% { transform: translateX(100%); position: absolute;}
-	}
-
-#midline{
-	position: absolute;
-	width: 1210px;
-	height: 15px;
-	top: 1690px;
-	border: 2px solid #B42640;
-	left: calc(50% - 605px);
-	background: #007165;
-}
-
-
-
-#people3{
-	position: absolute;
-	top: 2117px;
-	left: calc(50% - 581.5px);
-}
-
-
-@keyframes bigger{
-				to {position: absolute; left: 25%; width: 828px;}
-				from{position: absolute; left: 10%; width: 1px;}
-}
-
-#people4_1{
-	position: absolute;
-	top: 2600px;
-	left: 22px;
-}
-
-#people4_2{
-	position: absolute;
-	top: 2600px;
-	right: 22px;
-}
-
-#line1{
-	position: absolute;
-	top: 1430px;
-	left: calc(50% - 600px);
-
-}
-
-#line1_1{
-	position: absolute;
-	top: 2350px;
-	left: calc(50% - 600px);
-
-}
-
-#line2_1{
-	position: absolute;
-	top: 1900px;
-	left: calc(50% - 600px);
-}
-
-#sword1{
-	position: absolute;
-	top: 3330px;
-	left: 80px;
-	transform:rotate(65deg);
-	animation:sw 1s infinite linear alternate;
-}
-
-@keyframes sw { 
-				to {transform: rotate(60deg); position: absolute;}
-				from{transform: rotate(75deg); position: absolute;}
-			} 
-
-#sword2{
-	position: absolute;
-	top: 3490px;
-	left: 150px;
-	transform:rotate(40deg);
-	animation:aw 1.3s infinite linear alternate;
-}
-
-@keyframes aw { 
-				to {transform: rotate(55deg); position: absolute;}
-				from{transform: rotate(40deg); position: absolute;}
-			} 
-
-#sword3{
-	position: absolute;
-	top: 3485px;
-	left: 358px;
-	transform:rotate(10deg);
-	animation:bw 1.5s infinite linear alternate;
-}
-
-@keyframes bw { 
-				to {transform: rotate(12deg); position: absolute;}
-				from{transform: rotate(30deg); position: absolute;}
-			} 
-
-#sword4{
-	position: absolute;
-	left: calc(50% - 53.5px);
-	top: 3550px;
-	animation:fw 0.9s infinite linear alternate;
-}
-
-@keyframes fw { 
-				to {transform: rotate(5deg); position: absolute;}
-				from{transform: rotate(-5deg); position: absolute;}
-			} 
-
-#sword5{
-	position: absolute;
-	top: 3485px;
-	right: 358px;
-	transform:rotate(_10deg);
-	animation:bw_ 1.4s infinite linear alternate;
-}
-
-@keyframes bw_ { 
-				to {transform: rotate(-12deg); position: absolute;}
-				from{transform: rotate(-30deg); position: absolute;}
-			} 
-
-#sword6{
-	position: absolute;
-	top: 3490px;
-	right: 150px;
-	transform:rotate(-40deg);
-	animation:aw_ 1.6s infinite linear alternate;
-}
-
-@keyframes aw_ { 
-				to {transform: rotate(-55deg); position: absolute;}
-				from{transform: rotate(-40deg); position: absolute; }
-			} 
-
-#sword7{
-	position: absolute;
-	top: 3330px;
-	right: 80px;
-	transform:rotate(-65deg);
-	animation:swd 1.2s infinite linear alternate;
-
-}
-@keyframes swd { 
-				to {transform: rotate(-60deg); position: absolute;}
-				from{transform: rotate(-75deg); position: absolute;}
-			} 
-#star1{
-	position: absolute;
-	bottom: 2150px;
-	left: 100px;
-	animation:sta 1s infinite linear alternate;
-}
-
-#star2{
-	position: absolute;
-	bottom: 1850px;
-	left: 230px;
-	animation:sta 0.9s infinite linear alternate;
-}
-
-#star3{
-	position: absolute;
-	bottom: 1840px;
-	left: 150px;
-	animation:sta 1.3s infinite linear alternate;
-}
-
-
-#star4{
-	position: absolute;
-	bottom: 2100px;
-	right: 100px;
-	animation:sta 1.9s infinite linear alternate;
-}
-
-#star5{
-	position: absolute;
-	bottom: 1900px;
-	right: 130px;
-	animation:sta 1s infinite linear alternate;
-}
-
-
-#star6{
-	position: absolute;
-	bottom: 1600px;
-	right: 130px;
-	animation:sta 1.3s infinite linear alternate;
-}
-
-#star7{
-	position: absolute;
-	bottom: 1750px;
-	left: 90px;
-	animation:sta 1.2s infinite linear alternate;
-}
-
-#star8{
-	position: absolute;
-	bottom: 1800px;
-	right: 250px;
-	animation:sta 1.7s infinite linear alternate;
-}
-
-#star9{
-	position: absolute;
-	bottom: 2050px;
-	left: 180px;
-	animation:sta 0.8s infinite linear alternate;
-}
-
-#star10{
-	position: absolute;
-	bottom: 2000px;
-	right: 250px;
-	animation:sta 1.5s infinite linear alternate;
-}
-
-@keyframes sta { 
-				to {transform: scale(0.5); position: absolute;}
-			} 
-
-#trophy_back{
-	position: absolute;
-	bottom: 1488px;
-	left: calc(50% - 408px);
-	animation:troba 60s infinite linear alternate;
-}
-
-@keyframes troba { 
-				to {transform: rotate(0deg); position: absolute;}
-				from{transform: rotate(360deg); position: absolute;}
-			} 
-
-#trophy2{
-	position: absolute;
-	bottom: 1649px;
-	left: calc(50% - 183px);
-	opacity: 0%;
-	cursor:pointer;
-
-}
-
-#trophy{
-	position: absolute;
-	bottom: 1649px;
-	left: calc(50% - 183px);
-	opacity: 100%;
-	cursor:pointer;
-
-}
-
-@keyframes tro { 
-				to {transform: rotateY(0deg); position: absolute;}
-				from{transform: rotateY(360deg); position: absolute;}
-			}
-
-@keyframes troo { 
-				to {transform: rotateY(0deg); position: absolute;}
-				from{transform: rotateY(360deg); position: absolute;}
-			}
-
-
-#arm1{
-	position: absolute;
-	bottom: 2200px;
-	left: 55px;
-	animation: armmove 2s infinite linear alternate;
-}
-
-@keyframes armmove { 
-				to {transform: rotate(-20deg); position: absolute; z-index: 0;}
-				from{transform: rotate(20deg); left: 60px; bottom: 2200px; position: absolute; z-index: 0;}
-			}
-
-
-
-#arm1_1{
-	position: absolute;
-	bottom: 2200px;
-	right: 55px;
-	animation: armmovee 2s infinite linear alternate;
-}
-
-@keyframes armmovee { 
-				to {transform: rotate(20deg); position: absolute; z-index: 0;}
-				from{transform: rotate(-20deg); right: 60px; bottom: 2200px;  position: absolute; z-index: 0;}
-			}
-
-#triangle1{
-	position: absolute;
-	bottom: 2400px;
-	left: calc(50% - 269px);
-	transition: all 1s;
-	cursor:pointer;
-	animation: tri 0.3s infinite linear alternate;
-}
-
-@keyframes tri { 
-				to {bottom: 2380px; position: absolute; z-index: 0;}
-				from{bottom: 2425px; right: 60px; position: absolute; z-index: 0;}
-			}
-
-#arm2{
-	position: absolute;
-	bottom: 880px;
-	left: 55px;
-	animation: armmovetwo 1.3s infinite linear alternate;
-}
-
-@keyframes armmovetwo { 
-				to {transform: rotate(-20deg); position: absolute; z-index: 0;}
-				from{transform: rotate(5deg); left: 60px; bottom: 1000px;  position: absolute; z-index: 0;}
-			}
-
-#arm2_1{
-	position: absolute;
-	bottom: 880px;
-	right: 55px;
-	animation: armmovetw 1s infinite linear alternate;
-	}
-
-@keyframes armmovetw { 
-				to {transform: rotate(20deg); position: absolute; z-index: 0;}
-				from{transform: rotate(-5deg); right: 60px; bottom: 1000px;  position: absolute; z-index: 0;}
-			}
-
-
-#triangle2{
-	position: absolute;
-	left: calc(50% - 600px);
-	bottom: 380px;
-	animation: trii 3s infinite linear alternate;
-}
-
-@keyframes trii { 
-				to {position: absolute; z-index: 0;}
-				from{bottom: 480px; right: 60px; position: absolute; z-index: 0;}
-			}
-
-#mouth{
-	position: absolute;
-	left: calc(50% - 151px);
-	bottom: 870px;
-	animation: mou 0.1s infinite linear alternate;
-}
-
-@keyframes mou { 
-				to {transform: rotate(5deg); bottom: 890px; position: absolute; z-index: 0;}
-				from{transform: rotate(-5deg); bottom: 880px; position: absolute; z-index: 0;}
-			}
-
-#triangle2next{
-	position: absolute;
-	left: calc(50% - 530.5px);
-	bottom: 175px;
-}
-
-
-#face{
-	position: absolute;
-	left: calc(50% - 130px);
-	bottom: 0px;
-}
-
-#people5_2{
-	position: absolute;
-	left: 265px;
-	bottom: 0px;
-}
-
-#people5_3{
-	position: absolute;
-	right: 265px;
-	bottom: 0px;
-	/*좌우반전*/
-	 -moz-tranform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH";
-    animation: hah 1s linear infinite alternate;
-}
-
-#people5_arm{
-	position: absolute;
-	left: calc(50% - 298px);
-	bottom: 60px;
-	animation: armmovefiv 1.5s infinite linear alternate;
-}
-
-@keyframes armmovefiv { 
-				to {bottom: 80px; position: absolute; z-index: 0;}
-			}
-
-#people5_1{
-	position: absolute;
-	left: 22px;
-	bottom: 0px;
-}
-
-#people5_1arm{
-	position: absolute;
-	left: 50px;
-	bottom: 150px;
-}
-
-@keyframes armmovefi { 
-				from {transform: rotate(50deg); left: -32px; bottom: 73px; position: absolute; z-index: 0;}
-				to {transform: rotate(0deg); position: absolute; z-index: 0;}
-			}
-
-#people5_4{
-	position: absolute;
-	right: 22px;
-	bottom: 0px;
-	/*좌우반전*/
-	 -moz-tranform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH";
-    animation: hah 1s linear infinite alternate;
-}
-
-#people5_2arm{
-	position: absolute;
-	right: 50px;
-	bottom: 150px;
-}
-
-@keyframes armmovefii { 
-				from {transform: rotate(-50deg); right: -32px; bottom: 73px; position: absolute; z-index: 0;}
-				to {transform: rotate(0deg); position: absolute; z-index: 0;}
-			}
-
-
-
-#dom_top{
-	position: absolute;
-	bottom: 2762px;
-	left: calc(50% - 600px);
-}
-
-#dom_left{
-	position: absolute;
-	bottom: -15px;
-	left: 0px;
-}
-
-#dom_right{
-	position: absolute;
-	bottom: -15px;
-	right: 0px;
-	/*좌우반전*/
-	 -moz-tranform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH";
-    animation: hah 1s linear infinite alternate;
-}
-
-
-/*텍스트 css*/
-
-.spanclass{
-	background: black;
-	padding: 2px;
-}
-
-
-.maintext{
-	width: 600px; height: 300px;
-	left: calc(50% - 300px);
-	top: 50px;
-	position: absolute;
-	text-align: center;
-}
-
-#text1{
-	top: 500px;
-}
-
-#text2{
-	top: 1890px;
-}
-
-#text3{
-	top: 2950px;
-}
-
-#text4{
-	top: 3950px;
-}
-
-
-#text5{
-	top: 5020px;
-}
-
-#text6{
-	top: 6000px;
-}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>불행배틀</title>
+	<link rel="stylesheet" type="text/css" href="battle_style.css">
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<div id="titlee">
+		<img src="imgbattle/title.gif" id="timg">
+	</div>
+	<div class="warp">
+		<div id="back0"></div>
+
+
+		<img src="imgbattle/back3.gif" id="back3">
+		<img src="imgbattle/people3back.png" id="people3back">
+		<img src="imgbattle/back4.png" id="back4">
+		<img src="imgbattle/back5.png" id="back5">
+
+		<div id="back10"></div>
+		<div id="back10_1"></div>
+
+		<img src="imgbattle/domm2.gif" id="domm2">
+
+		<img src="imgbattle/domback2.gif" id="domback2">
+
+
+		<div class="bubble" id="bubble1"></div>
+		<div class="bubble" id="bubble2"></div>
+		<div class="bubble" id="bubble3"></div>
+		<div class="bubble" id="bubble4"></div>
+		<div class="bubble" id="bubble5"></div>
+		<div class="bubble" id="bubble6"></div>
+		<div class="bubble" id="bubble7"></div>
+		<div class="bubble" id="bubble8"></div>
+
+
+		<img src="imgbattle/people1-1.png" id="people1_1">
+		<img src="imgbattle/people1-1.png" id="people1_2">
+		<img src="imgbattle/people1-1.png" id="people1_3">
+		<img src="imgbattle/people1-1.png" id="people1_4">
+
+		<div id="table"></div>
+
+		<img src="imgbattle/people1-2.png" id="people1_21">
+		<img src="imgbattle/people1-2.png" id="people1_22">
+		<img src="imgbattle/people1-2.png" id="people1_23">
+		<img src="imgbattle/people1-2.png" id="people1_24">
+
+		<img src="imgbattle/people2-1.png" id="people2_1">
+		<img src="imgbattle/people2-1.png" id="people2_11">
+		<img src="imgbattle/people2-2.png" id="people2_2">
+		<img src="imgbattle/people2-2.png" id="people2_22">
+
+		<div id="midline"></div>
+
+
+		<img src="imgbattle/people3.gif" id="people3">
+		<img src="imgbattle/people4-2.png" id="people4_1">
+		<img src="imgbattle/people4-2.png" id="people4_2">
+
+		<img src="imgbattle/line1.png" id="line1">
+		<img src="imgbattle/line2.png" id="line2_1">
+		<img src="imgbattle/line1.png" id="line1_1">
+		
+		<img src="imgbattle/sword.png" id="sword1">
+		<img src="imgbattle/sword.png" id="sword2">
+		<img src="imgbattle/sword.png" id="sword3">
+		<img src="imgbattle/sword.png" id="sword4">
+		<img src="imgbattle/sword.png" id="sword5">
+		<img src="imgbattle/sword.png" id="sword6">
+		<img src="imgbattle/sword.png" id="sword7">
+
+		<img src="imgbattle/sword2.png" id="sword1_2">
+		<img src="imgbattle/sword2.png" id="sword2_2">
+		<img src="imgbattle/sword2.png" id="sword3_2">
+		<img src="imgbattle/sword2.png" id="sword4_2">
+		<img src="imgbattle/sword2.png" id="sword5_2">
+		<img src="imgbattle/sword2.png" id="sword6_2">
+		<img src="imgbattle/sword2.png" id="sword7_2">
+
+		<img src="imgbattle/star.png" id="star1">
+		<img src="imgbattle/star.png" id="star2">
+		<img src="imgbattle/star.png" id="star3">
+		<img src="imgbattle/star.png" id="star4">
+		<img src="imgbattle/star.png" id="star5">
+		<img src="imgbattle/star.png" id="star6">
+		<img src="imgbattle/star.png" id="star7">
+		<img src="imgbattle/star.png" id="star8">
+		<img src="imgbattle/star.png" id="star9">
+		<img src="imgbattle/star.png" id="star10">
+
+		<img src="imgbattle/trophy-back.png" id="trophy_back">
+		
+
+		<img src="imgbattle/arm1.png" id="arm1">
+		<img src="imgbattle/arm1-1.png" id="arm1_1">
+
+		<img src="imgbattle/trophy2.png" id="trophy2">
+		<img src="imgbattle/trophy.png" id="trophy">
+
+		<img src="imgbattle/arm2.png" id="arm2">
+		<img src="imgbattle/arm2-1.png" id="arm2_1">
+
+
+
+		<div id="domm1"></div>
+
+		<img src="imgbattle/triangle.png" id="triangle1">
+		<img src="imgbattle/triangle2.png" id="triangle2">
+		<img src="imgbattle/mouth.png" id="mouth">
+		<img src="imgbattle/triangle2next.png" id="triangle2next">
+
+		<img src="imgbattle/people5-1.png" id="people5_1">
+		<img src="imgbattle/people5-1.png" id="people5_4">
+
+		<img src="imgbattle/people5-2.png" id="people5_2">
+		<img src="imgbattle/people5-2.png" id="people5_3">
+		<img src="imgbattle/face.png" id="face">
+		<img src="imgbattle/people5arm.png" id="people5_arm">
+
+		
+		<img src="imgbattle/people5arm1.png" id="people5_1arm">
+	
+		<img src="imgbattle/people5arm2.png" id="people5_2arm">
+
+
+
+		<img src="imgbattle/dom-top.png" id="dom_top">
+		<img src="imgbattle/dom-left.png" id="dom_left">
+		<img src="imgbattle/dom-left.png" id="dom_right">
+		
+		<!--텍스트창-->
+
+		<p class="maintext" id="text1">
+			<span class="spanclass">제가 이용하는 커뮤니티에는 사람들의 이야기가 넘칩니다.</span><br>
+			<span class="spanclass">대체로 일상과 자신의 이야기를 하는 곳이지요. 하지만 그곳에서 소통하기 위해선 암묵적인 룰이 하나 있습니다.</span></p>
+
+		<p class="maintext" id="text2">
+			<span class="spanclass">바로 "일상에서 느끼는 부정적인 감정을 평가하고 비교할 것"입니다.</span>
+			</p>
+
+			<p class="maintext" id="text2_2">
+			<span class="spanclass">부정적인 글이 올라오면 질책과 타박, 동정과 위로 등 사람들은 다양한 방식으로 평가합니다.
+			가장 많은 동정표를 받은 사람은 한동안 스타가 되고, 사람들은 따뜻한 위로와 동정을 받기 위해 글을 씁니다.
+			</span></p>
+
+
+		<p class="maintext" id="text3">
+			<span class="spanclass">‘난 왜 이렇게 불행할까’</span><br><br>
+			<span class="spanclass">‘내일이 있다는 사실이 절망스럽다.’</span><br><br>
+			<span class="spanclass">‘죽고싶다’</span><br><br>
+			<span class="spanclass">‘다시 오늘이 왔네요.’</span><br><br>
+			<span class="spanclass">‘나는 왜 살까.’</span><br><br>
+			<span class="spanclass">‘나 그냥 죽을래~’</span><br><br>
+			<span class="spanclass">‘우울해서 죽고싶어요’</span><br><br>
+			<span class="spanclass">‘죽자, 나 자신의 의지로’</span></p>
+
+		<p class="maintext" id="text4">
+			<span class="spanclass">더 많은 동정을 얻기 위해 사람들은 앞다투어 자극적인 요소를 넣어 글을 씁니다.
+				이 재미가 좀 쏠쏠해요. 그래서 그런지 자살기도를 하는 사람이 늘어났습니다. 
+				새벽이면 어김없이 ‘죽고싶다’는 글이 우수수 올라옵니다.
+				</span></p>
+
+
+			<p class="maintext" id="text5">
+				<span class="spanclass">
+				지금도 자신을 불행 속으로 몰아 넣는 이야기를 담은 게시글이 올라옵니다.
+				불행에 관한 이야기를 할 수록 그 불행이 현실이 된다는 단점이 있지만,
+				하지만 사람들의 동정어린 관심이 정말 짜릿하답니다.
+
+				</span></p>
+
+			<p class="maintext" id="text6">
+				<span class="spanclass">
+				당신도 한번 이곳에 글을 적어보세요.</br>사람들이 생각하는 당신의 불행의 가치는 과연 어느 정도일까요?</span>
+			</p>
+				
+				<div id="moniter"></div>
+	</div>
+
+	<div id="bottomm">
+		
+	</div>
+
+	<script type="text/javascript" src="battle.js"></script>
+
+</body>
+</html>
