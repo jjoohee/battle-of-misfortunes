@@ -1,10 +1,8 @@
-
-//스크롤 작용
 window.onscroll = function(){
 		var t =document.documentElement.scrollTop + document.body.scrollTop;
 		moniter.innerHTML = t
 
-			if (t > 800) {
+			if (t > 400) {
 			people1_4.style.animation = "peo 0.3s infinite ease-in alternate";
 			people1_3.style.animation = "peo 0.3s 0.2s infinite ease-in alternate";
 			people1_2.style.animation = "peo 0.3s 0.4s infinite ease-in alternate";
@@ -12,13 +10,27 @@ window.onscroll = function(){
 
 		}
 
-		if (t > 1200) {
+		if (t > 800) {
 			people1_24.style.animation = "peo 0.3s infinite ease-in alternate";
 			people1_23.style.animation = "peo 0.3s 0.2s infinite ease-in alternate";
 			people1_22.style.animation = "peo 0.3s 0.4s infinite ease-in alternate";
 			people1_21.style.animation = "peo 0.3s 0.6s infinite ease-in alternate";
 
 		}
+
+		if (t > 3300) {
+			sword1_2.style.opacity = "0%";
+			sword2_2.style.opacity = "0%";
+			sword3_2.style.opacity = "0%";
+			sword4_2.style.opacity = "0%";
+			sword5_2.style.opacity = "0%";
+			sword6_2.style.opacity = "0%";
+			sword7_2.style.opacity = "0%";
+
+		}
+		else{
+
+			}
 
 		if (t > 5300) {
 			trophy.style.animation = "tro 2s ease alternate";
@@ -45,6 +57,7 @@ window.onscroll = function(){
 		}
 
 }
+
 
 //스크롤시 다른 링크로 이동
 
