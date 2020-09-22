@@ -1,6 +1,6 @@
 window.onscroll = function(){
 		var t =document.documentElement.scrollTop + document.body.scrollTop;
-		moniter.innerHTML = t
+		consle.innerHTML = t
 
 			if (t > 400) {
 			people1_4.style.animation = "peo 0.3s infinite ease-in alternate";
