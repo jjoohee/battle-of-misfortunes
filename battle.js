@@ -1,3 +1,18 @@
+//타이핑 효과
+var typing = document.getElementById('gocoder_typing');
+
+var typewriter = new Typewriter(typing, {
+    loop: true
+});
+
+typewriter.typeString('바로 "일상에서 느끼는 부정적인 감정을 평가하고 비교할 것"입니다.') //글자입력
+    .pauseFor(2500)
+    .deleteAll() // 글자 지우기
+    .start();
+
+
+
+//스크롤 작용
 window.onscroll = function(){
 		var t =document.documentElement.scrollTop + document.body.scrollTop;
 		moniter.innerHTML = t
@@ -17,8 +32,19 @@ window.onscroll = function(){
 			people1_21.style.animation = "peo 0.3s 0.6s infinite ease-in alternate";
 
 		}
+		if (t > 3000) {
+			text31.style.opacity = "100%";
+			text32.style.opacity = "100%";
+			text33.style.opacity = "100%";
+			text34.style.opacity = "100%";
+			text35.style.opacity = "100%";
+			text36.style.opacity = "100%";
+			text37.style.opacity = "100%";
+			text38.style.opacity = "100%";
 
-		if (t > 3300) {
+		}
+
+		if (t > 3400) {
 			sword1_2.style.opacity = "0%";
 			sword2_2.style.opacity = "0%";
 			sword3_2.style.opacity = "0%";
