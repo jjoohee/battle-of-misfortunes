@@ -988,36 +988,36 @@ transition: width 1000ms cubic-bezier(.25, 0, 0, 1);
 }
 #text31{
 	opacity: 0%;
-	transition: 2s 1s all;
+	transition: 2s 0s all;
 }
 #text32{
 	opacity: 0%;
-	transition: 2s 2s all;
+	transition: 2s 1s all;
 }
 
 #text33{
 	opacity: 0%;
-	transition: 2s 3s all;
+	transition: 2s 2s all;
 }
 #text34{
 	opacity: 0%;
-	transition: 2s 4s all;
+	transition: 2s 3s all;
 }
 #text35{
 	opacity: 0%;
-	transition: 2s 5s all;
+	transition: 2s 4s all;
 }
 #text36{
 	opacity: 0%;
-	transition: 2s 6s all;
+	transition: 2s 5s all;
 }
 #text37{
 	opacity: 0%;
-	transition: 2s 7s all;
+	transition: 2s 6s all;
 }
 #text38{
 	opacity: 0%;
-	transition: 2s 8s all;
+	transition: 2s 7s all;
 }
 
 #text4{
