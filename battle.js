@@ -63,6 +63,7 @@ window.onscroll = function(){
 			trophy2.style.animation = "tro 2s ease alternate";
 			trophy2.style.opacity = "100%";
 			trophy.style.opacity = "0%";
+				text5.style.opacity = "100%";
 
 		}
 		else{
@@ -70,6 +71,7 @@ window.onscroll = function(){
 			trophy2.style.animation = "";
 			trophy2.style.opacity = "";
 			trophy.style.opacity = "";
+				text5.style.opacity = "";
 		}
 
 		if (t > 7000) {
