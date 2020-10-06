@@ -1027,6 +1027,8 @@ transition: width 1000ms cubic-bezier(.25, 0, 0, 1);
 
 #text5{
 	top: 5020px;
+	opacity: 0%;
+	transition: 1s all;
 }
 
 #text6{
