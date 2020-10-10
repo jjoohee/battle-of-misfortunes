@@ -50,11 +50,11 @@ transition: width 1000ms cubic-bezier(.25, 0, 0, 1);
 }
 
 #timg{
-	width: 600px;
+	width: 560px;
 	height: auto;
 	position: absolute;
-	left: calc(50% - 300px);
-	top: calc(50% - 192.5px);
+	left: calc(50% - 280px);
+	top: calc(50% - 150px);
 }
 .warp{
 	top: 610px;
